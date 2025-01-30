@@ -63,7 +63,7 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 25px;
-    color: rgba(255, 255, 255, 0.63);
+    color: var(--paragraph-color);
     margin-bottom: 30px;
 }
 
@@ -92,8 +92,6 @@
 
 .header .container .header-content .header-box div {
     padding: 0px 30px;
-    /* padding-top: 30px; */
-
 }
 
 .header .container .header-content .header-box div:first-of-type {
@@ -125,7 +123,7 @@
     color: #ccc;
 }
 
-.header .container .header-content .header-box div:first-of-type + div +div +div  input:last-of-type {
+.header .container .header-content .header-box div:first-of-type+div+div+div input:last-of-type {
     margin-bottom: 30px;
 }
 
