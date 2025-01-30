@@ -20,7 +20,6 @@
 .header .container .header-content {
     display: flex;
     justify-content: space-between;
-    /* gap: 100px; */
 }
 
 .header .container .header-content .header-text {
@@ -114,6 +113,7 @@
 .header .container .header-content .header-box div input {
     border: none;
     padding-top: 30px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #eee;
     width: 100%;
 
