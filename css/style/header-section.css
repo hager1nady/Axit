@@ -79,7 +79,6 @@
     -o-border-radius: 3px;
 }
 
-
 .header .container .header-content .header-box {
     z-index: 1;
     margin-top: 100px;
@@ -93,6 +92,8 @@
 
 .header .container .header-content .header-box div {
     padding: 0px 30px;
+    /* padding-top: 30px; */
+
 }
 
 .header .container .header-content .header-box div:first-of-type {
@@ -112,7 +113,7 @@
 
 .header .container .header-content .header-box div input {
     border: none;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 5px;
     border-bottom: 2px solid #eee;
     width: 100%;
@@ -124,13 +125,13 @@
     color: #ccc;
 }
 
-.header .container .header-content .header-box div input:last-of-type {
-    margin-bottom: 25px;
+.header .container .header-content .header-box div:first-of-type + div +div +div  input:last-of-type {
+    margin-bottom: 30px;
 }
 
 .header .container .header-content .header-box div:last-of-type {
     background-color: var(--main-color);
-    padding: 12px 30px;
+    padding: 12px 0px;
     text-align: center;
     color: white;
 }
