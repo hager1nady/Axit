@@ -1,0 +1,118 @@
+.pricing {
+    background-color: #eee;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.pricing .container .pricing-content h2 {
+    text-transform: uppercase;
+}
+
+.pricing .container .pricing-content h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.pricing .container .pricing-content h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 60px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.pricing .container .pricing-content>p {
+    color: var(--paragraph-second-color);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pricing .container .pricing-content .pricing-cards {
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-header {
+    text-transform: capitalize;
+    padding: 15px 0px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pricing .container .pricing-content .pricing-cards .card {
+    width: calc(100% / 3);
+}
+
+.pricing .container .pricing-content .pricing-cards .card:first-of-type +.card .card-body + div {
+    padding: 20px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+}
+
+.pricing .container .pricing-content .pricing-cards .card:first-of-type +.card {
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+.pricing .container .pricing-content .pricing-cards .card-header,
+.card-body {
+    background-color: black;
+    color: white;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-body {
+    padding: 30px 0px;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-body span:first-of-type {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-body span:last-of-type {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-body>p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.688);
+    font-style: italic;
+}
+
+.pricing .container .pricing-content .pricing-cards .card-body+div {
+    background-color: var(--main-color);
+    height: 10px;
+}
+
+.pricing .container .pricing-content .pricing-cards .context {
+    background-color: white;
+}
+
+.pricing .container .pricing-content .pricing-cards .context div {
+    padding: 12px 0px;
+    border-bottom: 1px solid #eee;
+    color: var(--paragraph-second-color);
+    text-transform: capitalize;
+}
