@@ -1,0 +1,82 @@
+.customers {
+    padding-bottom: 80px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.customers .container .customer-content h2 {
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.customers .container .customer-content>p {
+    color: var(--paragraph-second-color);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.customers .container .customer-content .box-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.customers .container .customer-content .box-container .customer-box {
+    width: calc(100% /3);
+}
+
+.customers .container .customer-content .box-container .customer-box .box-text {
+    padding: 25px 15px;
+    background-color: #eee;
+    line-height: 22px;
+    text-align: start;
+    color: var(--paragraph-second-color);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+}
+
+.customers .container .customer-content .box-container .customer-box .box-text::before {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 20px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #eee transparent transparent transparent;
+
+}
+
+.customers .container .customer-content .box-container .customer-box .box-profile {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.customers .container .customer-content .box-container .customer-box .box-profile .profile-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.customers .container .customer-content .box-container .customer-box .box-profile .profile-text h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.customers .container .customer-content .box-container .customer-box .box-profile .profile-text p {
+    text-transform: capitalize;
+    color: var(--paragraph-second-color);
+    text-align: start;
+    margin-top: 5px;
+}
