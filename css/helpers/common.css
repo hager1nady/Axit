@@ -27,8 +27,8 @@ ul {
     width: 0px;
     height: 2px;
     background-color: var(--main-color);
-    left: 20px;
-    bottom: 20%;
+    left: 0px;
+    bottom: -10px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -38,7 +38,7 @@ ul {
 
 .active:hover::before {
     position: absolute;
-    width: 55%;
+    width: 100%;
 }
 
 .nav-logo h2 {
@@ -53,8 +53,13 @@ ul {
 }
 
 .btn-shape {
-    padding: 6px 20px;
+    padding: 8px 20px;
     font-size: 14px;
     text-transform: capitalize;
     cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }

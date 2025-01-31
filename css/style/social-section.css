@@ -1,3 +1,7 @@
+.social {
+    border-bottom: 2px solid var(--paragraph-second-color);
+}
+
 .social .container .social-content {
     display: flex;
     gap: 100px;
@@ -8,7 +12,7 @@
     width: calc(100% - 60%);
 }
 
-.social .container .social-content .social-text h3 {
+.social .container .social-content .social-text h2 {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: bold;
@@ -17,7 +21,8 @@
 
 .social .container .social-content .social-text p {
     line-height: 20px;
-    color: rgba(0, 0, 0, 0.429);
+    color: var(--paragraph-second-color);
+    font-size: 15px;
 }
 
 .social .container .social-content .social-icons {
@@ -32,5 +37,5 @@
 
 .social .container .social-content .social-icons span {
     font-size: 30px;
-    color: rgba(0, 0, 0, 0.429);
+    color: var(--paragraph-second-color);
 }
