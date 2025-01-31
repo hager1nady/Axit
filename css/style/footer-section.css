@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.footer .foot-icons span {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer p{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.74);
+    margin-top: 10px;
+}
