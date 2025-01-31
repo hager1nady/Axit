@@ -90,6 +90,10 @@
     width: 24%;
 }
 
+.header .container .header-content .header-box input:focus {
+    outline: none;
+}
+
 .header .container .header-content .header-box div {
     padding: 0px 30px;
 }
