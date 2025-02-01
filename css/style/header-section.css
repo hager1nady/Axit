@@ -131,7 +131,14 @@
 
 .header .container .header-content .header-box div:last-of-type {
     background-color: var(--main-color);
-    padding: 15px 0px;
+    padding: 10px 0px;
     text-align: center;
+}
+
+
+.header .container .header-content .header-box div:last-of-type .btn-shape {
+    border: none;
+    background-color: transparent;
     color: white;
+    font-size: 16px; 
 }
