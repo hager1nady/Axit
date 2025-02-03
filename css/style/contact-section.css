@@ -1,15 +1,17 @@
 .contact {
-    padding-bottom: 80px;
-    padding-top: 100px;
+    padding: var(--main-padding);
 }
 
 .contact .container .contact-content h2 {
     text-transform: uppercase;
-    position: relative;
     margin-bottom: 40px;
     font-size: 35px;
     font-weight: lighter;
     text-align: center;
+}
+
+.contact .container .contact-content h2::before {
+    left: 50%;
 }
 
 .contact .container .contact-content>p {
@@ -66,7 +68,7 @@
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition); 
+    -o-transition: var(--main-transition);
     display: block;
     margin: 20px auto 0px auto;
 }
@@ -74,4 +76,33 @@
 .contact .container .contact-content .btn-shape:hover {
     background-color: transparent;
     color: var(--main-color);
+}
+
+
+
+
+@media(max-width:767px) {
+    .contact .container .contact-content h2 {
+        font-size: 26px;
+    }
+
+    .contact .container .contact-content>p {
+        font-size: 16px;
+    }
+
+    .contact .container .contact-content .form {
+        flex-direction: column;
+    }
+
+    .contact .container .contact-content .form .form-content {
+        width: 100%;
+    }
+    
+    .contact .container .contact-content .form .form-txtarea {
+        width: 100%;
+    }
+
+    .contact .container .contact-content .btn-shape {
+        width: 100%;
+    }
 }

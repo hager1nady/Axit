@@ -27,10 +27,13 @@
 
 .style .container .style-content h2 {
     text-transform: uppercase;
-    position: relative;
     margin-bottom: 40px;
     font-size: 35px;
     font-weight: lighter;
+}
+
+.style .container .style-content h2::before{
+    left: 50%;
 }
 
 .style .container .style-content p {
@@ -49,4 +52,10 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+@media(max-width:767px) {
+    .style .container .style-content h2 {
+        font-size: 26px;
+    }
 }

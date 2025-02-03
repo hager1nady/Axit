@@ -3,4 +3,5 @@
     --main-transition: 0.3s;
     --paragraph-color: rgba(255, 255, 255, 0.63);
     --paragraph-second-color: rgba(0, 0, 0, 0.429);
+    --main-padding: 100px 0px 80px 0px;
 }

@@ -1,7 +1,6 @@
 .tabs {
     background-color: #eee;
-    padding-bottom: 80px;
-    padding-top: 100px;
+    padding: var(--main-padding);
 }
 
 .tabs .container .tabs-content {
@@ -26,10 +25,7 @@
 .tabs .container .tabs-content .tabs-box .box {
     padding: 40px 0px;
     text-align: center;
-}
-
-.tabs .container .tabs-content .tabs-box .box:first-of-type {
-    background-color: var(--main-color);
+    cursor: pointer;
 }
 
 .tabs .container .tabs-content .tabs-box .box:first-of-type+.box {
@@ -74,4 +70,56 @@
 .tabs .container .tabs-content .tab-text .btn-shape:hover {
     background-color: transparent;
     color: var(--main-color);
+}
+
+@media(max-width:767px) {
+    .tabs .container .tabs-content {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tabs .tabs-content .tab-image {
+        width: 100%;
+    }
+
+    .tabs .tabs-content .tab-image img {
+        width: 100%;
+    }
+}
+@media(min-width:768px)
+ {
+    .tabs .container .tabs-content .tabs-box {
+        width: 50%;
+    }
+
+    .tabs .container .tabs-content .tab-text {
+        width: 50%;
+    }
+
+    .tabs .tabs-content .tab-image {
+        display: none;
+    }
+}
+
+@media(min-width:1199px) {
+    .tabs .container .tabs-content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .tabs .container .tabs-content .tabs-box {
+        width: 100px;
+    }
+
+    .tabs .container .tabs-content .tab-text {
+        width: 60%;
+    }
+
+    .tabs .tabs-content .tab-image {
+        display: inline-block;
+        width: 20%;
+    }
 }

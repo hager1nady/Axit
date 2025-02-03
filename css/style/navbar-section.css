@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     padding: 10px 0px;
+    position: relative;
 }
 
 .container .navbar-content {
@@ -39,4 +40,44 @@
 
 .nav .container .nav-links ul li a:hover {
     color: var(--main-color);
+}
+
+
+
+
+@media (min-width:768px) {
+    .link-icon {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .link-icon {
+        display: block;
+    }
+
+
+    .nav .container .nav-links ul {
+        display: none;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+    }
+
+    .nav .container .nav-links .link-icon:hover+ul {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fd9b5061;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        align-items: center;
+        padding-bottom: 20px;
+    }
 }
